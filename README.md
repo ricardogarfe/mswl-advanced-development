@@ -1,20 +1,20 @@
 MSWL Advanced Development
 ==========================
 
-### Introduction
+# Introduction
 
 Notes and Exercises for Advanced Development Subject coursed in [Master on Libre Software (Master Universitario en Software libre)](http://master.libresoft.es/) at [Universidad Rey juan Carlos](http://www.urjc.es/).
 
-### Requirements
+# Requirements
 
 * LaTeX: to compile source code documentation files.
 * Android SDK.
 
-### Android Application
+# Android Application
 
 **TBC**
 
-### Proof of concept
+# Proof of concept
 
 Android proof of concept applications in Android directory such as `HelloWorld`:
 
@@ -25,7 +25,7 @@ mswl-advanced-development
 
 **TBC**
 
-### Notes
+# Notes
 
 Generate pdf using LaTeX:
 
@@ -35,7 +35,7 @@ $ pdflatex [name-of-latex-file.tex]
 
 **TBC**
 
-### Exercises
+# Exercises
 
 Exercises placed in `exercises` directory:
 
@@ -47,7 +47,7 @@ mswl-advanced-development
 
 ## Exercise 001
 
-# Description 
+### Description 
 
 The first exercise is about android layouts. You can use all the documentation in slides (Intro and Layouts). The goal of this exercise is build an interface similar to social network profile. 
 You can use this layout as template.
@@ -62,7 +62,7 @@ You can use this layout as template.
 
 **TBC**
 
-### License
+# License
 
 <a href="http://creativecommons.org/licenses/by/3.0/" rel="Creative Commons Attribution 3.0">![Foo](http://i.creativecommons.org/l/by/3.0/88x31.png)</a>
 
