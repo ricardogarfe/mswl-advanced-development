@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Exercise-001</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- Exercise 001 texts -->
+    <string name="center_title_text">Center Title</string>
+    <string name="user_name">User Name</string>
+    <string name="user_description">User status description occupying 2 to 3 complete lines</string>
+    <string name="show_profile">Show Profile</string>
+    <string name="load_info">Load Info</string>
+    <string name="update">Update</string>
+    <string name="localize">Locate Me!</string>
+    <string name="bottom_text">this is an encapsulated long text example for exercise</string>
+
+</resources>
