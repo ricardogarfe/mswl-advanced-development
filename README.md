@@ -54,8 +54,7 @@ You can use this layout as template.
 
 ![Android Layouts](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/exercise-001/exercise-001-layout.png)
 
-Remember
----------
+**Remember:**
 
 * You should try to use the minimum number of layouts and all the text must be referenced in string.xml file. 
 * Use Ctrl + F11 to change the view of emulator
