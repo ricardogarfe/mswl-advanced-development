@@ -13,6 +13,6 @@
     <string name="load_info">Load Info</string>
     <string name="update">Update</string>
     <string name="localize">Locate Me!</string>
-    <string name="bottom_text">this is an encapsulated long text example for exercise</string>
+    <string name="bottom_text">this is an encapsulated long text example for exercise, this is an encapsulated long text example for exercise</string>
 
 </resources>
