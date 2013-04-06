@@ -8,8 +8,10 @@
     <!-- Exercise 001 texts -->
     <string name="center_title_text">Center Title</string>
     <string name="user_name">User Name</string>
+    <string name="user_icon">User Icon</string>
+    <string name="display_map">Display Map</string>
     <string name="user_description">User status description occupying 2 to 3 complete lines</string>
-    <string name="show_profile">Show Profile</string>
+    <string name="view_profile">View Profile</string>
     <string name="load_info">Load Info</string>
     <string name="update">Update</string>
     <string name="localize">Locate Me!</string>
