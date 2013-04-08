@@ -51,8 +51,8 @@
 
                     <ImageView
                         android:id="@+id/user_icon"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
                         android:contentDescription="@string/user_icon"
                         android:scaleType="centerCrop"
@@ -109,46 +109,50 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:orientation="vertical" >
+                    android:orientation="vertical"
+                    android:weightSum="3" >
 
                     <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:background="#00FFFF" >
+                        android:background="#00FFFF" 
+                        android:layout_weight="1">
 
                         <Button
                             android:id="@+id/buttonViewProfile"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:text="@string/view_profile" />
                     </FrameLayout>
 
                     <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:background="#00FFFF" >
+                        android:background="#00FFFF" 
+                        android:layout_weight="1">
 
                         <Button
                             android:id="@+id/buttonLoadInfo"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:text="@string/load_info" />
                     </FrameLayout>
 
                     <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:background="#00FFFF" >
+                        android:background="#00FFFF" 
+                        android:layout_weight="1">
 
                         <Button
                             android:id="@+id/buttonUpdate"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:text="@string/update" />
                     </FrameLayout>
@@ -159,17 +163,19 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical" >
+                    android:orientation="vertical" 
+                    android:weightSum="4">
 
                     <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:background="#336600" >
+                        android:background="#336600"
+                        android:layout_weight="3" >
 
                         <ImageView
                             android:id="@+id/display_map"
-                            android:layout_width="150dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:adjustViewBounds="true"
@@ -182,12 +188,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:background="#336600" >
+                        android:background="#336600"
+                        android:layout_weight="1" >
 
                         <Button
                             android:id="@+id/buttonLocalize"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:text="@string/localize" />
                     </FrameLayout>
@@ -203,7 +210,7 @@
                 android:layout_weight="1"
                 android:background="#336600" >
 
-                <TextView
+                <TextView android:scrollHorizontally="true"
                     android:id="@+id/textViewBottom"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
