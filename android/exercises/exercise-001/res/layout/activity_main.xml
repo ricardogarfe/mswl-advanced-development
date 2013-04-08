@@ -1,223 +1,245 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameBase"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0000FF"
     tools:context=".MainActivity" >
 
-    <FrameLayout
-        android:id="@+id/frameBase"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="#0000FF" >
+        android:orientation="vertical"
+        android:weightSum="18" >
+
+        <!-- Title -->
+
+        <FrameLayout
+            android:id="@+id/textFrameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="#FF0000" >
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/center_title_text"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <!-- User info -->
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:weightSum="18" >
-
-            <!-- Title -->
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
 
             <FrameLayout
-                android:id="@+id/textFrameTitle"
-                android:layout_width="match_parent"
+                android:layout_width="90dp"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:background="#FF0000" >
+                android:background="#00FF00"
+                android:paddingTop="5dp" >
 
-                <TextView
-                    android:id="@+id/textViewTitle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/center_title_text" />
+                <ImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/user_icon"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user_icon" />
             </FrameLayout>
-
-            <!-- User info -->
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:baselineAligned="false"
-                android:orientation="horizontal" >
+                android:orientation="vertical" >
 
                 <FrameLayout
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:background="#00FF00" >
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00FF00"
+                    android:gravity="center" >
 
-                    <ImageView
-                        android:id="@+id/user_icon"
-                        android:layout_width="wrap_content"
+                    <TextView
+                        android:id="@+id/textViewUserName"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:contentDescription="@string/user_icon"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/user_icon" />
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:text="@string/user_name"
+                        android:textSize="14sp" />
                 </FrameLayout>
 
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical" >
+                    android:background="#00FF00"
+                    android:gravity="center" >
 
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="#00FF00"
-                        android:gravity="center" >
-
-                        <TextView
-                            android:id="@+id/textViewUserName"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/user_name" />
-                    </FrameLayout>
-
-                    <FrameLayout
+                    <TextView
+                        android:id="@+id/textViewUserDescription"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#00FF00"
-                        android:gravity="center" >
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:text="@string/user_description"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/textViewUserDescription"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="@string/user_description" />
-                    </FrameLayout>
-                </LinearLayout>
+        <!-- Options and display -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <!-- Options -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="3" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00FFFF"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp" >
+
+                    <Button
+                        android:id="@+id/buttonViewProfile"
+                        android:layout_width="95dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="@string/view_profile" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00FFFF"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <Button
+                        android:id="@+id/buttonLoadInfo"
+                        android:layout_width="95dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="@string/load_info" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00FFFF"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <Button
+                        android:id="@+id/buttonUpdate"
+                        android:layout_width="95dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="@string/update" />
+                </FrameLayout>
             </LinearLayout>
 
-            <!-- Options and display -->
+            <!-- Display -->
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="10"
-                android:baselineAligned="false"
-                android:orientation="horizontal" >
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="4" >
 
-                <!-- Options -->
-
-                <LinearLayout
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="vertical"
-                    android:weightSum="3" >
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:background="#00FFFF" 
-                        android:layout_weight="1">
-
-                        <Button
-                            android:id="@+id/buttonViewProfile"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:text="@string/view_profile" />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:background="#00FFFF" 
-                        android:layout_weight="1">
-
-                        <Button
-                            android:id="@+id/buttonLoadInfo"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:text="@string/load_info" />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:background="#00FFFF" 
-                        android:layout_weight="1">
-
-                        <Button
-                            android:id="@+id/buttonUpdate"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:text="@string/update" />
-                    </FrameLayout>
-                </LinearLayout>
-
-                <!-- Display -->
-
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical" 
-                    android:weightSum="4">
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:background="#336600"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp" >
 
-                    <FrameLayout
-                        android:layout_width="match_parent"
+                    <ImageView
+                        android:id="@+id/display_map"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:background="#336600"
-                        android:layout_weight="3" >
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/display_map"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/display_map" />
+                </FrameLayout>
 
-                        <ImageView
-                            android:id="@+id/display_map"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:adjustViewBounds="true"
-                            android:contentDescription="@string/display_map"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/display_map" />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:background="#336600"
-                        android:layout_weight="1" >
-
-                        <Button
-                            android:id="@+id/buttonLocalize"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:text="@string/localize" />
-                    </FrameLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- Bottom Text -->
-
-            <FrameLayout
-                android:id="@+id/textFrameBottom"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#336600" >
-
-                <TextView android:scrollHorizontally="true"
-                    android:id="@+id/textViewBottom"
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="@string/bottom_text"
-                    android:textColor="#FF0000" />
-            </FrameLayout>
-        </LinearLayout>
-    </FrameLayout>
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#336600"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
 
-</RelativeLayout>
+                    <Button
+                        android:id="@+id/buttonLocalize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="@string/localize" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Bottom Text -->
+
+        <FrameLayout
+            android:id="@+id/textFrameBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#336600" >
+
+            <TextView
+                android:id="@+id/textViewBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollHorizontally="true"
+                android:text="@string/bottom_text"
+                android:textColor="#FF0000" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
