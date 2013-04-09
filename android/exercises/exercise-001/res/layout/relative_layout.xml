@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0000FF"
@@ -14,7 +13,6 @@
         android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/relativeLayout"
         android:background="#FF0000"
         android:gravity="center"
         android:paddingBottom="5dp"
@@ -28,6 +26,7 @@
         android:id="@+id/user_icon"
         android:layout_width="95dp"
         android:layout_height="95dp"
+        android:layout_alignParentLeft="true"
         android:layout_below="@id/textViewTitle"
         android:adjustViewBounds="true"
         android:background="#00FF00"
@@ -52,9 +51,10 @@
         android:id="@+id/textViewUserDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@id/linearDisplay"
+        android:layout_alignParentRight="true"
         android:layout_below="@id/textViewUserName"
         android:layout_toRightOf="@id/user_icon"
-        android:layout_above="@id/display_map"
         android:background="#00FF00"
         android:gravity="center"
         android:paddingTop="5dp"
@@ -70,6 +70,7 @@
         android:id="@+id/linearButtonList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_below="@id/user_icon"
         android:background="#00FFFF"
         android:gravity="center_vertical"
@@ -107,41 +108,48 @@
 
     <!-- Display -->
 
-    <ImageView
-        android:id="@+id/display_map"
+    <LinearLayout
+        android:id="@+id/linearDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_alignTop="@id/linearButtonList"
         android:layout_gravity="center"
         android:layout_toRightOf="@id/linearButtonList"
-        android:adjustViewBounds="true"
         android:background="#336600"
-        android:contentDescription="@string/display_map"
-        android:paddingBottom="5dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:paddingTop="5dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/display_map" />
+        android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/buttonLocalize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/display_map"
-        android:layout_gravity="center"
-        android:layout_toRightOf="@id/linearButtonList"
-        android:paddingBottom="5dp"
-        android:paddingTop="5dp"
-        android:text="@string/localize" />
+        <ImageView
+            android:id="@+id/display_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="#336600"
+            android:contentDescription="@string/display_map"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/display_map" />
 
+        <Button
+            android:id="@+id/buttonLocalize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/localize" />
+    </LinearLayout>
     <!-- Bottom Text -->
 
     <TextView
         android:id="@+id/textViewBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/buttonLocalize"
+        android:layout_below="@id/linearDisplay"
         android:background="#336600"
         android:scrollHorizontally="true"
         android:text="@string/bottom_text"
