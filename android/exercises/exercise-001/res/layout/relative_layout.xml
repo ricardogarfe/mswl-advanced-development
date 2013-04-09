@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0000FF"
-    android:orientation="vertical"
-    android:weightSum="18" >
+    android:orientation="vertical" >
 
     <!-- Title -->
 
@@ -13,6 +12,7 @@
         android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:background="#FF0000"
         android:gravity="center"
         android:paddingBottom="5dp"
@@ -22,134 +22,117 @@
 
     <!-- User info -->
 
-    <ImageView
-        android:id="@+id/user_icon"
-        android:layout_width="95dp"
-        android:layout_height="95dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/textViewTitle"
-        android:adjustViewBounds="true"
-        android:background="#00FF00"
-        android:contentDescription="@string/user_icon"
-        android:paddingTop="5dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/user_icon" />
-
-    <TextView
-        android:id="@+id/textViewUserName"
+    <RelativeLayout
+        android:id="@+id/relativeUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textViewTitle"
-        android:layout_toRightOf="@id/user_icon"
-        android:background="#00FF00"
-        android:gravity="center"
-        android:paddingTop="5dp"
-        android:text="@string/user_name"
-        android:textSize="14sp" />
+        android:layout_below="@id/textViewTitle" >
 
-    <TextView
-        android:id="@+id/textViewUserDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/linearDisplay"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/textViewUserName"
-        android:layout_toRightOf="@id/user_icon"
-        android:background="#00FF00"
-        android:gravity="center"
-        android:paddingTop="5dp"
-        android:text="@string/user_description"
-        android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:background="#00FF00"
+            android:contentDescription="@string/user_icon"
+            android:paddingTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_icon" />
 
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/user_icon"
+            android:background="#00FF00"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/user_name"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewUserDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textViewUserName"
+            android:layout_toRightOf="@id/user_icon"
+            android:background="#00FF00"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/user_description"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
     <!-- Options and display -->
 
 
     <!-- Options -->
 
-    <LinearLayout
-        android:id="@+id/linearButtonList"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/buttonViewProfile"
+        android:layout_width="95dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/user_icon"
-        android:background="#00FFFF"
-        android:gravity="center_vertical"
-        android:orientation="vertical"
-        android:paddingBottom="5dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="10dp"
-        android:weightSum="3" >
+        android:text="@string/view_profile" />
 
-        <Button
-            android:id="@+id/buttonViewProfile"
-            android:layout_width="95dp"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/view_profile" />
+    <Button
+        android:id="@+id/buttonLoadInfo"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/buttonViewProfile"
+        android:layout_gravity="center"
+        android:text="@string/load_info" />
 
-        <Button
-            android:id="@+id/buttonLoadInfo"
-            android:layout_width="95dp"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/load_info" />
-
-        <Button
-            android:id="@+id/buttonUpdate"
-            android:layout_width="95dp"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/update" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/buttonLoadInfo"
+        android:layout_gravity="center"
+        android:text="@string/update" />
 
     <!-- Display -->
 
-    <LinearLayout
-        android:id="@+id/linearDisplay"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/display_map"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@id/linearButtonList"
+        android:layout_alignTop="@id/buttonViewProfile"
         android:layout_gravity="center"
-        android:layout_toRightOf="@id/linearButtonList"
+        android:layout_toRightOf="@id/buttonViewProfile"
+        android:adjustViewBounds="true"
         android:background="#336600"
-        android:orientation="vertical" >
+        android:contentDescription="@string/display_map"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/display_map" />
 
-        <ImageView
-            android:id="@+id/display_map"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:adjustViewBounds="true"
-            android:background="#336600"
-            android:contentDescription="@string/display_map"
-            android:paddingBottom="5dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:paddingTop="5dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/display_map" />
-
-        <Button
-            android:id="@+id/buttonLocalize"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingBottom="5dp"
-            android:paddingTop="5dp"
-            android:text="@string/localize" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/buttonLocalize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display_map"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/buttonUpdate"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/localize" />
     <!-- Bottom Text -->
 
     <TextView
         android:id="@+id/textViewBottom"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/linearDisplay"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/buttonLocalize"
         android:background="#336600"
         android:scrollHorizontally="true"
         android:text="@string/bottom_text"
