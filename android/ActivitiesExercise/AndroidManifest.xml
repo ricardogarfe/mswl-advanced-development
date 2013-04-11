@@ -30,6 +30,10 @@
             android:name="es.advanced.development.activities.Actividad2"
             android:label="@string/title_activity_actividad2" >
         </activity>
-    </application>
+        <activity
+            android:name="es.advanced.development.activities.Actividad3"
+            android:label="@string/title_activity_actividad3" >
+        </activity>
+        </application>
 
 </manifest>

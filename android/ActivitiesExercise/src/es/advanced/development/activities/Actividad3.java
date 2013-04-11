@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.widget.TextView;
 
-public class Actividad2 extends Activity {
+public class Actividad3 extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class Actividad2 extends Activity {
 
         Intent returnIntent = new Intent();
 
-        returnIntent.putExtra("PARAM", 20);
+        returnIntent.putExtra("PARAM", 30);
 
         setResult(RESULT_OK, returnIntent);
 
