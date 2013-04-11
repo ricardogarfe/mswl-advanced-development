@@ -1,53 +1,17 @@
-MSWL Advanced Development
-==========================
+MSWL Advanced Development - Exercise 001
+=========================================
 
 # Introduction
 
-Notes and Exercises for Advanced Development Subject coursed in [Master on Libre Software (Master Universitario en Software libre)](http://master.libresoft.es/) at [Universidad Rey juan Carlos](http://www.urjc.es/).
+Exercises 001 for Advanced Development Subject coursed in [Master on Libre Software (Master Universitario en Software libre)](http://master.libresoft.es/) at [Universidad Rey juan Carlos](http://www.urjc.es/).
 
 # Requirements
 
-* LaTeX: to compile source code documentation files.
 * Android SDK.
 
-# Android Application
+# Description
 
-**TBC**
-
-# Proof of concept
-
-Android proof of concept applications in Android directory such as `HelloWorld`:
-
-```shell
-mswl-advanced-development
-├── android
-```
-
-**TBC**
-
-# Notes
-
-Generate pdf using LaTeX:
-
-```shell
-$ pdflatex [name-of-latex-file.tex]
-```
-
-**TBC**
-
-# Exercises
-
-Exercises placed in `exercises` directory:
-
-```shell
-mswl-advanced-development
-├── android
-│   ├── exercises
-```
-
-## Exercise 001
-
-### Description 
+# Description 
 
 The first exercise is about android layouts. You can use all the documentation in slides (Intro and Layouts). The goal of this exercise is build an interface similar to social network profile. 
 You can use this layout as template.
@@ -59,7 +23,7 @@ You can use this layout as template.
 * You should try to use the minimum number of layouts and all the text must be referenced in string.xml file. 
 * Use Ctrl + F11 to change the view of emulator
 
-### Solution
+# Solution
 
 * Exercise 001 solution using ScrollView:
 
@@ -70,22 +34,19 @@ mswl-advanced-development
        └── exercise-001
 ```
 
-* See [README] file for solution.
+## Snapshots
 
-## Exercise 002
+Vertical view:
 
-* Exercise 002 **ActivitiesExercise**:
+![Vertical view](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/exercise-001/assets/device-normal.png)
 
-```shell
-mswl-advanced-development
-└── android/
-    └── exercises
-       └── ActivitiesExercise
-```
+Landscape view scrolled up:
 
-* See [README] file for solution.
+![Landscape view](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/exercise-001/assets/device-landscape-000.png)
 
-**TBC**
+Landscape view scrolled down:
+
+![Landscape view down](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/exercise-001/assets/device-landscape-001.png)
 
 # License
 
