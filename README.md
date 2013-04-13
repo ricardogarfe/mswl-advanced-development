@@ -101,7 +101,6 @@ mswl-advanced-development
 
 * See [README](https://github.com/ricardogarfe/mswl-advanced-development/blob/master/android/exercises/ActivitiesExercise/README.md) file for solution.
 
-**TBC**
 
 # License
 

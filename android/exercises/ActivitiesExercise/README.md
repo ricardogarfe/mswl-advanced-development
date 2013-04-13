@@ -33,17 +33,29 @@ The exercise then consist in make the same with _other activity (called activity
 
 ## Snapshots
 
+Main Activity:
+
+[Main Activity](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/ActivitiesExercise/assets/main-activity.png)
+
+Stack Activity:
+
+[Stack Activity](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/ActivitiesExercise/assets/stack-activity.png)
+
 Return from Activity 2:
 
+[Return from Activity 2](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/ActivitiesExercise/assets/activity-2-toast.png)
 
 Return from Activity 3:
 
+[Return from Activity 3](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/ActivitiesExercise/assets/activity-3-toast.png)
 
-open an `URL`:
+Open an `URL`:
 
+[open an `URL`](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/ActivitiesExercise/assets/activity-browser.png)
 
 `call phone`:
 
+[`call phone`](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/ActivitiesExercise/assets/activity-call.png)
 
 # License
 
