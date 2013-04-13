@@ -35,18 +35,14 @@ The exercise then consist in make the same with _other activity (called activity
 
 Return from Activity 2:
 
-![Vertical view](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/exercise-001/assets/device-normal.png)
 
 Return from Activity 3:
 
-![Landscape view](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/exercise-001/assets/device-landscape-000.png)
 
 open an `URL`:
 
 
-
 `call phone`:
-
 
 
 # License
