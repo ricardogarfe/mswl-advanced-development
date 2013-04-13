@@ -99,7 +99,7 @@ mswl-advanced-development
        └── ActivitiesExercise
 ```
 
-* See [README] file for solution.
+* See [README](https://github.com/ricardogarfe/mswl-advanced-development/blob/master/android/exercises/ActivitiesExercise/README.md) file for solution.
 
 **TBC**
 
