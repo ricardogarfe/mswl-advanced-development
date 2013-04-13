@@ -12,6 +12,8 @@
     <string name="buttonStack">Button Stack</string>
     <string name="buttonActividad2">Button Actividad2</string>
     <string name="buttonActividad3">Button Actividad3</string>
+    <string name="buttonBrowser">Open Browser</string>
+    <string name="buttonCall">Call Button</string>
 
     <!-- StackActiviy -->
     <string name="stackActivityText">Stack Activity</string>

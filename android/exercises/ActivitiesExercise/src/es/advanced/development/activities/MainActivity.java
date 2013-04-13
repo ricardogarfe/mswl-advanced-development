@@ -2,6 +2,7 @@ package es.advanced.development.activities;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -14,14 +15,27 @@ public class MainActivity extends Activity {
     private final int REQUEST_CODE_ACTIVIDAD_2 = 2;
     private final int REQUEST_CODE_ACTIVIDAD_3 = 3;
 
+    private final String phone = "666-666-666";
+
     private final String PARAM = "PARAM";
+
+    private Button buttonStack;
+    private Button buttonActividad2;
+    private Button buttonActividad3;
+    private Button buttonBrowser;
+    private Button buttonCall;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button buttonStack = (Button) this.findViewById(R.id.buttonStack);
+        setUpButtonsIntent();
+    }
+
+    public void setUpButtonsIntent() {
+
+        buttonStack = (Button) this.findViewById(R.id.buttonStack);
 
         if (buttonStack != null) {
             buttonStack.setOnClickListener(new OnClickListener() {
@@ -36,8 +50,7 @@ public class MainActivity extends Activity {
             });
         }
 
-        Button buttonActividad2 = (Button) this
-                .findViewById(R.id.buttonActividad2);
+        buttonActividad2 = (Button) this.findViewById(R.id.buttonActividad2);
 
         if (buttonActividad2 != null) {
             buttonActividad2.setOnClickListener(new OnClickListener() {
@@ -54,8 +67,7 @@ public class MainActivity extends Activity {
             });
         }
 
-        Button buttonActividad3 = (Button) this
-                .findViewById(R.id.buttonActividad3);
+        buttonActividad3 = (Button) this.findViewById(R.id.buttonActividad3);
 
         if (buttonActividad3 != null) {
             buttonActividad3.setOnClickListener(new OnClickListener() {
@@ -71,6 +83,38 @@ public class MainActivity extends Activity {
                 }
             });
         }
+
+        buttonBrowser = (Button) this.findViewById(R.id.buttonBrowser);
+
+        if (buttonBrowser != null) {
+            buttonBrowser.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                    // TODO Auto-generated method stub
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    String url = "http://www.google.com";
+                    intent.setData(Uri.parse(url));
+                    startActivity(intent);
+                }
+            });
+        }
+
+        buttonCall = (Button) this.findViewById(R.id.buttonCall);
+
+        if (buttonCall != null) {
+            buttonCall.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                    // TODO Auto-generated method stub
+                    Intent callIntent = new Intent(Intent.ACTION_CALL);
+                    callIntent.setData(Uri.parse("tel:" + phone));
+                    startActivity(callIntent);
+                }
+            });
+        }
+
     }
 
     @Override
