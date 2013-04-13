@@ -70,9 +70,25 @@ mswl-advanced-development
        └── exercise-001
 ```
 
-* See [README] file for solution.
+* See [README](https://github.com/ricardogarfe/mswl-advanced-development/blob/master/android/exercises/exercise-001/README.md) file for solution.
 
 ## Exercise 002
+
+### Description 
+
+The second exercise is about activities. You can use all the documentation in slides and source code. The goal of this exercise is understand the send of parameters between activities.
+
+We make in class an exercise that it has a main activity with some buttons. One of them button generates a transition to `activity2` with `startAcitivityForResult` call and send the title that have to appear in `activity2`. When user push back key from `activity2` we send a **param (20)** as return and show it in the main activity using a **Toast**.
+
+The exercise then consist in make the same with _other activity (called activity3)_. As this way, the main activity must show a Toast saying `"Come back Activity2"` or `"Come back Activity3"`.
+
+### Resources
+
+*  [Activities and send parameters](https://github.com/rocapal/android-examples/tree/master/02.1-Activities)
+
+*  [Life Cycle of Acitivities](https://github.com/rocapal/android-examples/tree/master/02.2-ActivitiesLifeCycle)
+
+### Solution
 
 * Exercise 002 **ActivitiesExercise**:
 
