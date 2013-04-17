@@ -6,7 +6,6 @@
     <!-- Main Activity -->
     <string name="textActivities">Activities</string>
     <string name="menu_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
 
     <!-- Buttons -->
     <string name="buttonStack">Button Stack</string>
