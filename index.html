@@ -4,40 +4,31 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Mswl-advanced-development by ricardogarfe</title>
+
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-
-      <header>
-        <h1>Mswl-advanced-development</h1>
-        <p>Notes and exercises for Advanced Development Subject coursed in [Master on Libre Software (Master Universitario en Software libre](http://master.libresoft.es/) at [Universidad Rey juan Carlos](http://www.urjc.es/)</p>
-      </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/ricardogarfe/mswl-advanced-development" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/ricardogarfe/mswl-advanced-development/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/ricardogarfe/mswl-advanced-development/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
     <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
+      <header>
+        <h1 class="header">Mswl-advanced-development</h1>
+        <p class="header">Notes and exercises for Advanced Development Subject coursed in [Master on Libre Software (Master Universitario en Software libre](http://master.libresoft.es/) at [Universidad Rey juan Carlos](http://www.urjc.es/)</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/ricardogarfe/mswl-advanced-development/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/ricardogarfe/mswl-advanced-development/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/ricardogarfe/mswl-advanced-development">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/ricardogarfe">ricardogarfe</a></p>
+
+
+      </header>
       <section>
         <h1>MSWL Advanced Development</h1>
 
@@ -89,27 +80,63 @@
 <p>The first exercise is about android layouts. You can use all the documentation in slides (Intro and Layouts). The goal of this exercise is build an interface similar to social network profile. 
 You can use this layout as template.</p>
 
-<p><img src="https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/exercise-001/exercise-001-layout.png" alt="Android Layouts"></p>
+<p><img src="https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/exercise-001/assets/exercise-001-layout.png" alt="Android Layouts"></p>
 
 <p><strong>Remember:</strong></p>
 
 <ul>
 <li>You should try to use the minimum number of layouts and all the text must be referenced in string.xml file. </li>
 <li>Use Ctrl + F11 to change the view of emulator</li>
-</ul><p><strong>TBC</strong></p>
+</ul><h3>Solution</h3>
 
-<h1>License</h1>
+<ul>
+<li>Exercise 001 solution using ScrollView:</li>
+</ul><pre lang="shell"><code>mswl-advanced-development
+└── android/
+    └── exercises
+       └── exercise-001
+</code></pre>
+
+<ul>
+<li>See <a href="https://github.com/ricardogarfe/mswl-advanced-development/blob/master/android/exercises/exercise-001/README.md">README</a> file for solution.</li>
+</ul><h2>Exercise 002</h2>
+
+<h3>Description</h3>
+
+<p>The second exercise is about activities. You can use all the documentation in slides and source code. The goal of this exercise is understand the send of parameters between activities.</p>
+
+<p>We make in class an exercise that it has a main activity with some buttons. One of them button generates a transition to <code>activity2</code> with <code>startAcitivityForResult</code> call and send the title that have to appear in <code>activity2</code>. When user push back key from <code>activity2</code> we send a <strong>param (20)</strong> as return and show it in the main activity using a <strong>Toast</strong>.</p>
+
+<p>The exercise then consist in make the same with <em>other activity (called activity3)</em>. As this way, the main activity must show a Toast saying <code>"Come back Activity2"</code> or <code>"Come back Activity3"</code>.</p>
+
+<h3>Resources</h3>
+
+<ul>
+<li><p><a href="https://github.com/rocapal/android-examples/tree/master/02.1-Activities">Activities and send parameters</a></p></li>
+<li><p><a href="https://github.com/rocapal/android-examples/tree/master/02.2-ActivitiesLifeCycle">Life Cycle of Acitivities</a></p></li>
+</ul><h3>Solution</h3>
+
+<ul>
+<li>Exercise 002 <strong>ActivitiesExercise</strong>:</li>
+</ul><pre lang="shell"><code>mswl-advanced-development
+└── android/
+    └── exercises
+       └── ActivitiesExercise
+</code></pre>
+
+<ul>
+<li>See <a href="https://github.com/ricardogarfe/mswl-advanced-development/blob/master/android/exercises/ActivitiesExercise/README.md">README</a> file for solution.</li>
+</ul><h1>License</h1>
 
 <p><a href="http://creativecommons.org/licenses/by/3.0/" rel="Creative Commons Attribution 3.0"><img src="http://i.creativecommons.org/l/by/3.0/88x31.png" alt="Foo"></a></p>
 
 <p>This work by Ricardo Gracía Fernández - ricardogarfe [at] gmail [dot] com is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</p>
       </section>
       <footer>
-        <p>Project maintained by <a href="https://github.com/ricardogarfe">ricardogarfe</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+		
   </body>
 </html>
