@@ -28,3 +28,5 @@ Las imágenes se considderan como Integer para obtenerlas en la aplicación. Deb
 
 Context de Android para acceder a los métodos de Android para Layouts, etc...
 
+Un adaptador no siempre genera un mismo layout.
+

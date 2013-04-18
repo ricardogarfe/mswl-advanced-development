@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.app.ListActivity;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -83,7 +84,7 @@ public class ComplexListActivity extends ListActivity {
 
         mArray.add(mynode3);
 
-        // mArray.addAll(mArray);
+        mArray.addAll(mArray);
 
     }
 
@@ -99,7 +100,7 @@ public class ComplexListActivity extends ListActivity {
 
         @Override
         public int getCount() {
-            return mArray.size();
+            return mArray.size() + (mArray.size() / 2) + (mArray.size() % 2);
         }
 
         @Override
@@ -118,24 +119,43 @@ public class ComplexListActivity extends ListActivity {
         public View getView(int position, View convertView, ViewGroup parent) {
 
             View view;
+
             LayoutInflater inflater = (LayoutInflater) mContext
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-            view = inflater.inflate(R.layout.complex_list_main, null);
+            boolean advertise = ((position + 1) % 3 == 0);
 
-            // Dar valores a los Widgets del elemento complejo de la lista
-            // descrito en complex_list_main.xml
-            TextView titleTextView = (TextView) view.findViewById(R.id.title);
-            titleTextView.setText(mArray.get(position).mTitle);
+            if (advertise) {
 
-            TextView descriptionTextView = (TextView) view
-                    .findViewById(R.id.description);
-            descriptionTextView.setText(mArray.get(position).mDescription);
+                view = inflater.inflate(R.layout.publicidad_item, null);
 
-            ImageView imageViewLogo = (ImageView) view.findViewById(R.id.image);
-            imageViewLogo.setImageDrawable(mContext.getResources().getDrawable(
-                    mArray.get(position).mImageResource));
+                TextView titleTextView = (TextView) view
+                        .findViewById(R.id.publicidad);
+                titleTextView.setText(R.string.publicidad);
+                titleTextView.setBackgroundColor(Color.YELLOW);
 
+            } else {
+
+                position = position - ((position + 1) / 3);
+
+                view = inflater.inflate(R.layout.complex_list_main, null);
+
+                // Dar valores a los Widgets del elemento complejo de la lista
+                // descrito en complex_list_main.xml
+                TextView titleTextView = (TextView) view
+                        .findViewById(R.id.title);
+                titleTextView.setText(mArray.get(position).mTitle);
+
+                TextView descriptionTextView = (TextView) view
+                        .findViewById(R.id.description);
+                descriptionTextView.setText(mArray.get(position).mDescription);
+
+                ImageView imageViewLogo = (ImageView) view
+                        .findViewById(R.id.image);
+                imageViewLogo.setImageDrawable(mContext.getResources()
+                        .getDrawable(mArray.get(position).mImageResource));
+
+            }
             return view;
         }
 

@@ -15,4 +15,6 @@
     <string name="description2">A dynamic, interpreted, open source programming language with a focus on simplicity and productivity</string>
     <string name="description3">Java is a general-purpose, concurrent, class-based, object-oriented computer programming language that is specifically designed to have as few implementation dependencies as possible</string>
 
+    <!-- Publicidad -->
+    <string name="publicidad">Anuncio, anuncio, anuncio !</string>
 </resources>
