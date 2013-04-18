@@ -2,6 +2,7 @@ package es.advantage.development.listslayout;
 
 import android.app.ListActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
@@ -13,6 +14,8 @@ public class SimpleListActivity extends ListActivity {
     private ListView listView;
     private ListAdapter listAdapter;
     private String[] testValues = new String[] { "URJC", "EOI", "Android" };
+
+    private String TAG = getClass().getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +37,11 @@ public class SimpleListActivity extends ListActivity {
         // TODO Auto-generated method stub
         super.onListItemClick(l, v, position, id);
 
-        Toast.makeText(this, String.valueOf(position) + " - "
-                + testValues[position], Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,
+                String.valueOf(position) + " - " + testValues[position],
+                Toast.LENGTH_SHORT).show();
+
+        Log.d(TAG, "Postition:\t" + String.valueOf(position));
+        Log.d(TAG, "Value:\t" + testValues[position]);
     }
 }
