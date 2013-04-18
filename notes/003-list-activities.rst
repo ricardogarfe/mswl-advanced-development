@@ -21,4 +21,10 @@ Activity:
 
 Indexado por array que devuelve la posición del elemento pinchado.
 
+Lista compleja
+----------------
+
+Las imágenes se considderan como Integer para obtenerlas en la aplicación. Debido a la referencia de memoria con la que se codifica.
+
+Context de Android para acceder a los métodos de Android para Layouts, etc...
 

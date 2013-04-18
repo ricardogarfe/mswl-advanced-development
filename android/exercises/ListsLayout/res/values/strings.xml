@@ -5,4 +5,14 @@
     <string name="textList">Cabecera de la lista</string>
     <string name="menu_settings">Settings</string>
 
+    <!-- Title -->
+    <string name="title1">Python</string>
+    <string name="title2">Ruby</string>
+    <string name="title3">Java</string>
+
+    <!-- Description -->
+    <string name="description1">Home page for Python, an interactive, object-oriented, extensible programming language.</string>
+    <string name="description2">A dynamic, interpreted, open source programming language with a focus on simplicity and productivity</string>
+    <string name="description3">Java is a general-purpose, concurrent, class-based, object-oriented computer programming language that is specifically designed to have as few implementation dependencies as possible</string>
+
 </resources>
