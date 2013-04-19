@@ -36,7 +36,10 @@ You can try to use `GalleryView` instead of `ListView` to show results.
 
 # Solution
 
-* Activities Exercise using `Toast` to return values from activities, open an `URL` and open a `call phone`.
+`ListActivity` created using different items:
+
+* Advertisement with text.
+* ComplexItem composed by image and texts.
 
 ## Snapshots
 
