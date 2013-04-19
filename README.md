@@ -101,6 +101,41 @@ mswl-advanced-development
 
 * See [README](https://github.com/ricardogarfe/mswl-advanced-development/blob/master/android/exercises/ActivitiesExercise/README.md) file for solution.
 
+## Exercise 003
+
+### Description 
+
+This weekly exercise is about android lists. You can use all the documentation in slides (Intro and Layouts). The goal of this exercise is build a list activity that show nodes information and between them (each two regular nodes) you should show a different layout with a textview (simulating advertising).
+
+You can use the example of ListActivity as starting point.
+
+### Resources
+
+Use Log traces to debug your source code
+
+```java
+private final String TAG = getClass().getSimpleName(); 
+Lod.d(TAG, "trace");
+``` 
+
+You can refresh your adapter when you change the data from array. Just you use your adapter with the following method:
+
+```java
+mAdapter.notifyDataSetChanged();
+```
+
+### Solution
+
+* Exercise 003 **ListsLayout**:
+
+```shell
+mswl-advanced-development
+└── android/
+    └── exercises
+       └── ListsLayout
+```
+
+* See [README](https://github.com/ricardogarfe/mswl-advanced-development/blob/master/android/exercises/ListsLayout/README.md) file for solution.
 
 # License
 
