@@ -126,6 +126,39 @@ You can use this layout as template.</p>
 
 <ul>
 <li>See <a href="https://github.com/ricardogarfe/mswl-advanced-development/blob/master/android/exercises/ActivitiesExercise/README.md">README</a> file for solution.</li>
+</ul><h2>Exercise 003</h2>
+
+<h3>Description</h3>
+
+<p>This weekly exercise is about android lists. You can use all the documentation in slides (Intro and Layouts). The goal of this exercise is build a list activity that show nodes information and between them (each two regular nodes) you should show a different layout with a textview (simulating advertising).</p>
+
+<p>You can use the example of ListActivity as starting point.</p>
+
+<h3>Resources</h3>
+
+<p>Use Log traces to debug your source code</p>
+
+<div class="highlight"><pre><span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">TAG</span> <span class="o">=</span> <span class="n">getClass</span><span class="o">().</span><span class="na">getSimpleName</span><span class="o">();</span> 
+<span class="n">Lod</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">"trace"</span><span class="o">);</span>
+</pre></div>
+
+<p>You can refresh your adapter when you change the data from array. Just you use your adapter with the following method:</p>
+
+<div class="highlight"><pre><span class="n">mAdapter</span><span class="o">.</span><span class="na">notifyDataSetChanged</span><span class="o">();</span>
+</pre></div>
+
+<h3>Solution</h3>
+
+<ul>
+<li>Exercise 003 <strong>ListsLayout</strong>:</li>
+</ul><pre lang="shell"><code>mswl-advanced-development
+└── android/
+    └── exercises
+       └── ListsLayout
+</code></pre>
+
+<ul>
+<li>See <a href="https://github.com/ricardogarfe/mswl-advanced-development/blob/master/android/exercises/ListsLayout/README.md">README</a> file for solution.</li>
 </ul><h1>License</h1>
 
 <p><a href="http://creativecommons.org/licenses/by/3.0/" rel="Creative Commons Attribution 3.0"><img src="http://i.creativecommons.org/l/by/3.0/88x31.png" alt="Foo"></a></p>
