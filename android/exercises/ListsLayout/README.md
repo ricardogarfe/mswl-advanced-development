@@ -47,6 +47,10 @@ Advertisement between every two list elements:
 
 ![Advertisement](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/ListsLayout/assets/publicity-view.png)
 
+Advertisement landscape between every two list elements:
+
+![Advertisement landscape](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/ListsLayout/assets/publicity-view-landscape.png)
+
 # License
 
 <a href="http://creativecommons.org/licenses/by/3.0/" rel="Creative Commons Attribution 3.0">![Foo](http://i.creativecommons.org/l/by/3.0/88x31.png)</a>
