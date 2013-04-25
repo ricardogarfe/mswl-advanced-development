@@ -145,4 +145,10 @@ public class MapsActivity extends MapActivity {
         return false;
     }
 
+    @Override
+    protected void onDestroy() {
+        // TODO Auto-generated method stub
+        mLocationManager.removeUpdates(mLocationListener);
+        super.onDestroy();
+    }
 }
