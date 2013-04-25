@@ -47,6 +47,15 @@ public class MapsActivity extends MapActivity {
 
     }
 
+    private void refreshMap() {
+
+        GeoPoint geoPoint = new GeoPoint((int) (mLocation.getLatitude() * 1E6),
+                (int) (mLocation.getLongitude() * 1E6));
+
+        mapController.setZoom(18);
+        mapController.animateTo(geoPoint);
+    }
+
     private void setLocationListener() {
 
         mLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -76,6 +85,7 @@ public class MapsActivity extends MapActivity {
                             + String.valueOf(mLocation.getLatitude())
                             + "\n* Longitude:\t"
                             + String.valueOf(mLocation.getLongitude()));
+            refreshMap();
         }
 
         /*
