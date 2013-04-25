@@ -5,10 +5,17 @@
     tools:context=".MapsActivity" >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:id="@+id/textViewLocation"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="50dp"
         android:text="@string/hello_world" />
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/textViewLocation"
+        android:apiKey="@string/map_key" />
 
 </RelativeLayout>
