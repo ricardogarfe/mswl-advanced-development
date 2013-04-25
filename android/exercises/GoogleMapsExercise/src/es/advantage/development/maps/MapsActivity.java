@@ -1,6 +1,5 @@
 package es.advantage.development.maps;
 
-import android.R.string;
 import android.content.Context;
 import android.location.Location;
 import android.location.LocationListener;
