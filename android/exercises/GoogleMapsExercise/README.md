@@ -29,11 +29,13 @@ The result of your app must be similar like this screenshots:
 
 # Solution
 
-**TBC**
+Solution using MapOverlay added text `String` to show item selected from list view.
 
 ## Snapshots
 
-**TBC**
+![List](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/GoogleMapsExercise/assets/lista-objetos.png)
+
+![MapsListLocation](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/GoogleMapsExercise/assets/show-location.png)
 
 # License
 
