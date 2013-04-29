@@ -13,13 +13,13 @@ Exercise 004 for Advanced Development Subject coursed in [Master on Libre Softwa
 
 This weekly exercise is about android Maps. You can use all the documentation in slides. The goals of this exercise are:
 
-Modify MapOverlay class to have a generic method for the text. In this way, you can use this overlay in all of your apps.
-Using the exercise of list as start point you have to add some changes to allow save latitude and longitude in your structure data.
-Later, when the use push any item of your list you have to open a second activity where name, picture and GPS location are shown in a MapActivity.
+* Modify MapOverlay class to have a generic method for the text. In this way, you can use this overlay in all of your apps.
+* Using the exercise of list as start point you have to add some changes to allow save latitude and longitude in your structure data.
+* Later, when the use push any item of your list you have to open a second activity where name, picture and GPS location are shown in a MapActivity.
 
 You can use the example of Maps as starting point.
 
-    * https://github.com/rocapal/android-examples/blob/master/5-HelloMap/src/es/curso/android/HelloMap/MapOverlay.java
+* https://github.com/rocapal/android-examples/blob/master/5-HelloMap/src/es/curso/android/HelloMap/MapOverlay.java
 
 # Resources
 
