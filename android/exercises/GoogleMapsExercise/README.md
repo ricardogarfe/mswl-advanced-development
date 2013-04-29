@@ -33,7 +33,11 @@ Solution using MapOverlay added text `String` to show item selected from list vi
 
 ## Snapshots
 
+List View Activity:
+
 ![List](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/GoogleMapsExercise/assets/lista-objetos.png)
+
+Map Activity with selected item:
 
 ![MapsListLocation](https://raw.github.com/ricardogarfe/mswl-advanced-development/master/android/exercises/GoogleMapsExercise/assets/show-location.png)
 
