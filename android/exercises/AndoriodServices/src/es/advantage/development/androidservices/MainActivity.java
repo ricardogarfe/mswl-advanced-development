@@ -27,7 +27,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity implements IAndroidService {
 
-    private static String TAG = MainActivity.class.getName();
+    private final String TAG = getClass().getSimpleName();
 
     private Button buttonStartService;
     private Button buttonStopService;
