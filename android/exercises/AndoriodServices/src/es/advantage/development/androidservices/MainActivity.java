@@ -1,14 +1,33 @@
+/*
+ * Copyright [2013] [Ricardo García Fernández] [ricardogarfe@gmail.com]
+ * 
+ * This file is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option) any later
+ * version.
+ * 
+ * This file is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License along with
+ * this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package es.advantage.development.androidservices;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements IAndroidService {
+
+    private static String TAG = MainActivity.class.getName();
 
     private Button buttonStartService;
     private Button buttonStopService;
@@ -25,9 +44,11 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
                 startService(new Intent(getApplicationContext(),
                         AndroidService.class));
+
+                AndroidService
+                        .regListerner((IAndroidService) MainActivity.this);
             }
         });
 
@@ -49,6 +70,13 @@ public class MainActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+
+    @Override
+    public void updateTime(String time) {
+
+        Log.d(TAG, "New time:\t" + time);
+
     }
 
 }

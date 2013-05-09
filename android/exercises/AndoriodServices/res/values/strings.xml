@@ -9,5 +9,6 @@
     <string name="textServices">Test Service</string>
     <string name="buttonStartService">Start Service</string>
     <string name="buttonStopService">Stop Service</string>
+    <string name="textTime">Waiting Service</string>
 
 </resources>
