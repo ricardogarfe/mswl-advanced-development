@@ -23,6 +23,15 @@ Comunicación entre estados:
 * onRestart(): de onStop() -> onRestart() -> onStart().
 * onPause(): Activity Running onPause() -> onResume().
 
+Rotar pantalla:
+
+* onSaveInstanceState() -> onPause() -> onStop() -> onDestroy()
+* oncreate() -> onStart() -> onRestoreInstance() -> onResume()
+
+Botón atrás:
+
+* onDestroy()
+
 Intent
 =======
 
