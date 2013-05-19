@@ -61,19 +61,7 @@ public class MapsExerciseActivity extends MapActivity {
 
         if (intentFromActivity != null) {
 
-            double latitudSelected = intentFromActivity
-                    .getDoubleExtra("Lat", 0);
-            double longitudSelected = intentFromActivity.getDoubleExtra("Lon",
-                    0);
-
-            mNodeMap = new Node();
-            mNodeMap.mLat = latitudSelected;
-            mNodeMap.mLon = longitudSelected;
-            mNodeMap.mTitle = intentFromActivity.getStringExtra("title");
-            mNodeMap.mDescription = intentFromActivity
-                    .getStringExtra("description");
-            mNodeMap.mImageResource = intentFromActivity
-                    .getIntExtra("image", 0);
+            mNodeMap = intentFromActivity.getParcelableExtra("node");
 
         }
 

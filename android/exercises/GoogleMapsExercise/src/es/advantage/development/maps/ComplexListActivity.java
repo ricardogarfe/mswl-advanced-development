@@ -56,12 +56,7 @@ public class ComplexListActivity extends ListActivity {
             // Create a new intent to call MapsActivity With GeoPoint.
             Intent intentMapsExercise = new Intent(ComplexListActivity.this,
                     MapsExerciseActivity.class);
-            intentMapsExercise.putExtra("title", selectedNode.mTitle);
-            intentMapsExercise.putExtra("description",
-                    selectedNode.mDescription);
-            intentMapsExercise.putExtra("image", selectedNode.mImageResource);
-            intentMapsExercise.putExtra("Lat", selectedNode.mLat);
-            intentMapsExercise.putExtra("Lon", selectedNode.mLon);
+            intentMapsExercise.putExtra("node", selectedNode);
 
             startActivity(intentMapsExercise);
         }
